@@ -22,7 +22,7 @@ function texttospeech(text) {
             utternance.voice = voice
         }
     }
-    speechSynthesis.speak = utternance
+    speechSynthesis.speak(utternance)
 }
 speechbtn.addEventListener('click', (e) => {
     e.preventDefault()
