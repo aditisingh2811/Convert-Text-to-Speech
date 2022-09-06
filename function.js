@@ -31,7 +31,7 @@ speechbtn.addEventListener('click', (e) => {
             texttospeech(textarea.value)
         }
         if(textarea.value.length > 80) {
-            if(synth.speaking) {
+            if(isSpeaking) {
                 synth.resume()
                 isSpeaking = false
                 speechbtn.innerHTML = 'Pause Speech'
